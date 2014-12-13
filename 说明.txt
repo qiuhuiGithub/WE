@@ -1,0 +1,6 @@
+管理员
+用户名：qh密码：qh
+数据员
+用户名：qiuhui密码：qiuhui
+用户
+用户名：zhangsan密码：zhangsan

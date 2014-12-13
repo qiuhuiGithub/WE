@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="com.action" namespace="/" extends="struts-default">
+	<action name="lostlist" class="com.action.EquipLostAction" method="execute">
+	<result name="success">/equipment/lostlist.jsp</result>
+	<result name="error">/error.jsp</result>
+	</action>
+	<action name="equiplist" class="com.action.EquipListAction" method="execute">
+	<result name="success">/equipment/equiplist.jsp</result>
+	<result name="error">/equipment/error.jsp</result>
+	</action>
+	<action name="borrowlist" class="com.action.EquipBorrowListAction" method="execute">
+	<result name="success">/equipment/borrowlist.jsp</result>
+	<result name="error">/equipment/listerror.jsp</result>
+	</action>
+	<action name="brokelist" class="com.action.EquipBrokeListAction" method="execute">
+	<result name="success">/equipment/brokelist.jsp</result>
+	<result name="error">/equipment/listerror.jsp</result>
+	</action>
+	<action name="movelist" class="com.action.EquipMoveListAction" method="execute">
+	<result name="success">/equipment/movelist.jsp</result>
+	<result name="error">/equipment/listerror.jsp</result>
+	</action>
+	</package>
+
+	<package name="userAction" namespace="/" extends="struts-default">
+	<action name="regist" class="userAction.RegistAction" method="execute">
+	<result name="success">/registsuccess.jsp</result>
+	<result name="error">/registerror.jsp</result>
+	</action>
+	
+	<action name="login" class="userAction.LoginAction" method="execute">
+	<result name="success">/main.jsp</result>
+	<result name="edit">/mainedit.jsp</result>
+	<result name="user">/mainuser.jsp</result>
+	<result name="error">/error.jsp</result>
+	</action>
+	<action name="info" class="userAction.UserinfoAction" method="execute">
+	<result name="success">/userinfo.jsp</result>
+	<result name="error">/infoerror.jsp</result>
+	</action>
+	
+	<action name="list" class="userAction.UserListAction" method="execute">
+	<result name="success">/adminlist.jsp</result>
+	<result name="edit">/editlist.jsp</result>
+	<result name="user">/userlist.jsp</result>
+	<result name="error">/infoerror.jsp</result>
+	</action>
+	
+	<action name="change" class="userAction.UserChangeAction" method="execute">
+	<result name="success">/changesuccess.jsp</result>
+	<result name="error">/infoerror.jsp</result>
+	</action>
+	</package>
+	
+	<package name="equipAction" namespace="/" extends="struts-default">
+	<action name="query" class="equipAction.EquipQueryAction" method="execute">
+	<result name="success">/equipment/equipment.jsp</result>
+	<result name="error">/equipment/queryerror.jsp</result>
+	<result name="name">/equipment/querybyname.jsp</result>
+	<result name="vender">/equipment/querybyvender.jsp</result>
+	</action>
+	<action name="query2" class="equipAction.EquipQuery2Action" method="execute">
+	<result name="success">/equipment/equipment1.jsp</result>
+	<result name="error">/equipment/queryerror.jsp</result>
+	<result name="name">/equipment/querybyname1.jsp</result>
+	<result name="vender">/equipment/querybyvender1.jsp</result>
+	</action>
+	<action name="price" class="equipAction.EquipPriceAction" method="execute">
+	<result name="success">/equipment/querybyprice.jsp</result>
+	<result name="error">/equipment/queryerror.jsp</result>
+	</action>
+	<action name="price1" class="equipAction.EquipPrice1Action" method="execute">
+	<result name="success">/equipment/querybyprice1.jsp</result>
+	<result name="error">/equipment/queryerror.jsp</result>
+	</action>
+	<action name="query1" class="equipAction.EquipQuery1Action" method="execute">
+	<result name="success">/equipment/equipmentbyuser.jsp</result>
+	<result name="error">/equipment/usererror.jsp</result>
+	</action>
+	<!-- <action name="equiplist" class="equipAction.EquipListAction" method="execute">
+	<result name="success">/equipment/equiplist.jsp</result>
+	<result name="error">/equipment/error.jsp</result>
+	</action> -->
+	
+	<action name="borrow" class="equipAction.EquipBorrowAction" method="execute">
+	<result name="success">/equipment/borrowsuccess.jsp</result>
+	<result name="error">/equipment/borrowerror.jsp</result>
+	</action>
+	
+	<!-- <action name="borrowlist" class="equipAction.EquipBorrowListAction" method="execute">
+	<result name="success">/equipment/borrowlist.jsp</result>
+	<result name="error">/equipment/listerror.jsp</result>
+	</action> -->
+	
+	<action name="borrowbyuser" class="equipAction.EquipBorrowbyuserAction" method="execute">
+	<result name="success">/equipment/borrowbyusersuccess.jsp</result>
+	<result name="error">/equipment/borrowerror.jsp</result>
+	</action>
+	
+	<action name="borrowbyuserlist" class="equipAction.EquipBorrowbyuserListAction" method="execute">
+	<result name="success">/equipment/borrowbyuserlist.jsp</result>
+	<result name="error">/equipment/borrowerror.jsp</result>
+	</action>
+	
+	<action name="add" class="equipAction.EquipAddAction" method="execute">
+	<result name="success">/equipment/addsuccess.jsp</result>
+	<result name="error">/equipment/adderror.jsp</result>
+	</action>
+	<action name="broke" class="equipAction.EquipBrokeAction" method="execute">
+	<result name="success">/equipment/brokesuccess.jsp</result>
+	<result name="error">/equipment/brokeerror.jsp</result>
+	</action>
+	
+	<!-- <action name="brokelist" class="equipAction.EquipBrokeListAction" method="execute">
+	<result name="success">/equipment/brokelist.jsp</result>
+	<result name="error">/equipment/listerror.jsp</result>
+	</action> -->
+	
+	<action name="edit" class="equipAction.EquipEditAction" method="execute">
+	<result name="success">/equipment/editsuccess.jsp</result>
+	<result name="error">/equipment/editerror.jsp</result>	
+	</action>
+	
+	<action name="select" class="equipAction.EquipSelectAction" method="execute">
+	<result name="success">/equipment/equipedit.jsp</result>
+	<result name="error">/equipment/editerror.jsp</result>
+	</action>
+	
+	<action name="lost" class="equipAction.EquipLostAction" method="execute">
+	<result name="success">/equipment/lostsuccess.jsp</result>
+	<result name="error">/equipment/losterror.jsp</result>
+	</action>
+	
+	<!-- <action name="lostlist" class="equipAction.EquipLostListAction" method="execute">
+	<result name="success">/equipment/lostlist.jsp</result>
+	<result name="error">/equipment/listerror.jsp</result>
+	</action> -->
+	
+	<action name="move" class="equipAction.EquipMoveAction" method="execute">
+	<result name="success">/equipment/movesuccess.jsp</result>
+	<result name="error">/equipment/moveerror.jsp</result>
+	</action>
+	
+	<!-- <action name="movelist" class="equipAction.EquipMoveListAction" method="execute">
+	<result name="success">/equipment/movelist.jsp</result>
+	<result name="error">/equipment/listerror.jsp</result>
+	</action> -->
+	
+	</package>
+</struts>    
